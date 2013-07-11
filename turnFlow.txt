@@ -1,0 +1,41 @@
+Turn flow
+EVIDENCE DAY
+	Server:
+		From current state, calculate what player's movement options are per character
+		Send
+	Client:
+		Choose a character to move or pass movement
+		Send
+	Server:
+		From current state, show character options
+			i.e. 
+				2 If character in location of interest, can "investigate" for evidence
+				3 IF character at person of interest, can interrogate for evidence
+				4 Else no options
+		Send
+	Client:
+		Choose option
+		Send
+	Server:
+		switch(option) {
+		
+			case(4):
+				end turn;
+			
+			case(3 || 2):
+				Decide whether or not player gets an evidence
+				give (or not) evidence
+				end turn;
+				
+		}
+
+ARGUMENT DAY (better than labor day)
+Active player starts argument
+	Player 1:
+		Show evidence
+		send to server
+	Player 2:
+		receive what player 1 sent as evidence
+		Show counterevidence
+		Argue without evidence
+		Submit
