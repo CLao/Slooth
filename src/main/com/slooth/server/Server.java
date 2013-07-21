@@ -1,4 +1,4 @@
-package com.slooth.game;
+package com.slooth.server;
 
 public class Server {
 	public static void main() {
