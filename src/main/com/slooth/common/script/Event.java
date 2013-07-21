@@ -1,5 +1,7 @@
 package com.slooth.common.script;
 
-public interface Event {
+public abstract class Event {
 
+    String name;
+    
 }

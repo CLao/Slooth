@@ -9,4 +9,12 @@ import java.util.Set;
 
 public class Script {
     private Set<Event> events;
+
+    public Set<Event> getEvents() {
+        return events;
+    }
+
+    public void setEvents(Set<Event> events) {
+        this.events = events;
+    }
 }
